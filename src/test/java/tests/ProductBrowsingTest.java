@@ -25,7 +25,7 @@ public class ProductBrowsingTest extends BaseTest {
 
     @Test
     public void testSortByNameZtoA() {
-        //loginPage.login("standard_user", "secret_sauce");
+        //loginPage.login("standard_user", "secret_sauce"); //We can't login again here, and be come back
         inventoryPage.selectSortOption("za");
         List<String> names = inventoryPage.getAllItemsNames();
         List<String> sortedNames = new ArrayList<>(names);
@@ -36,7 +36,7 @@ public class ProductBrowsingTest extends BaseTest {
 
     @Test
     public void testSortByPriceLowToHigh() {
-        //loginPage.login("standard_user", "secret_sauce");
+        //loginPage.login("standard_user", "secret_sauce"); //We don't need to login again
         inventoryPage.selectSortOption("lohi");
         List<Double> prices = inventoryPage.getAllItemsPrices().stream()
                 .map(p -> Double.parseDouble(p.replace("$", "")))
@@ -49,7 +49,7 @@ public class ProductBrowsingTest extends BaseTest {
 
     @Test
     public void testSortByPriceHighToLow() {
-        // loginPage.login("standard_user", "secret_sauce");
+        // loginPage.login("standard_user", "secret_sauce"); // We don't need to login again here as well, since we already logged in before, inthe beginning
         inventoryPage.selectSortOption("hilo");
         List<Double> prices = inventoryPage.getAllItemsPrices().stream()
                 .map(p -> Double.parseDouble(p.replace("$", "")))

@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 import pages.CheckoutPage;
 import pages.InventoryPage;
 import pages.LoginPage;
-//This test class does everything at once, from logging in to checking out
+//This is an optional class, with everything, as a flow
 public class SauceDemoTest {
     Playwright playwright;
     Browser browser;

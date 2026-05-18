@@ -37,6 +37,5 @@ public class InventoryPage {
                 .filter(new Locator.FilterOptions().setHasText(productName))
                 .locator("button")
                 .click();
-
     }
 }

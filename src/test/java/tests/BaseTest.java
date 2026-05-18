@@ -14,7 +14,6 @@ public class BaseTest {
     Playwright playwright;
     Browser browser;
     Page page;
-
     LoginPage loginPage;
     InventoryPage inventoryPage;
     CheckoutPage checkoutPage;

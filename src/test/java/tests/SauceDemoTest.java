@@ -25,6 +25,7 @@ public class SauceDemoTest {
     @DataProvider(name = "userDiscovery")
     public Object[][] userTestData() {
         return new Object[][] {
+                // I can use any of these users
                 { "standard_user" },
 //                { "problem_user" },
 //                { "performance_glitch_user" },

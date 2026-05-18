@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 import pages.CheckoutPage;
 import pages.InventoryPage;
 import pages.LoginPage;
-
+//This test class does everything at once, from logging in to checking out
 public class SauceDemoTest {
     Playwright playwright;
     Browser browser;

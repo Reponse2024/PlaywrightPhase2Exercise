@@ -10,7 +10,6 @@ public class CheckoutPage {
   }
 
   public void proceedToCheckout(){
-
       page.click("#checkout");
   }
   public void fillInformation(String first, String last, String zip){
@@ -23,7 +22,6 @@ public class CheckoutPage {
       page.click("#finish");
   }
   public String getSuccessMessage(){
-
       return page.innerText(".complete-header");
   }
   public void gobackHome(){

@@ -23,8 +23,6 @@ public class InventoryPage {
         page.click(cartIcon);
     }
 
-    // Products browsing methods/ Implementations
-
     public void selectSortOption(String value){
         page.selectOption(sortContainer, value);
     }
@@ -39,6 +37,5 @@ public class InventoryPage {
                 .filter(new Locator.FilterOptions().setHasText(productName))
                 .locator("button")
                 .click();
-
     }
 }

@@ -13,7 +13,6 @@ public class LoginPage {
     public LoginPage(Page page){
         this.page = page;
     }
-
     public void login (String user, String pass){
         page.fill(usernameInput, user);
         page.fill(passwordInput, pass);

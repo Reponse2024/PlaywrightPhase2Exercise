@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 import pages.CheckoutPage;
 import pages.InventoryPage;
 import pages.LoginPage;
-
+//This is an optional class, with everything, as a flow
 public class SauceDemoTest {
     Playwright playwright;
     Browser browser;
